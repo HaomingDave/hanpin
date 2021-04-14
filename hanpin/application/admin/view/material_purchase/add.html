@@ -1,0 +1,122 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div class="bootstrap-table">
+                        <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST"
+                              action="">
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">类型:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_type_cn" data-rule="required"
+                                           data-source="material_purchase/getTypeList" class="form-control selectpage"
+                                           name="row[mp_type_cn]" type="text" value="">
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_ghs_id')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_ghs_id" data-rule="required" data-source="supplier/selectpage"
+                                           class="form-control selectpage" name="row[mp_ghs_id]" type="text"
+                                           value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">材料名称:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_cl_name" class="form-control" data-rule="required" name="row[mp_cl_name]" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">材料型号:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_cl_model" class="form-control" name="row[mp_cl_model]" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">材料规格:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_cl_specifications" class="form-control" name="row[mp_cl_specifications]" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">材料品牌:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_cl_brand" class="form-control" name="row[mp_cl_brand]" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_budget_quantity')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_budget_quantity" data-rule="required" class="form-control"
+                                           name="row[mp_budget_quantity]" type="number"
+                                           value="0">
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_purchased_quantity')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_purchased_quantity" data-rule="required" class="form-control"
+                                           name="row[mp_purchased_quantity]" type="number"
+                                           value="0">
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_sq_quantity')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_sq_quantity" class="form-control" name="row[mp_sq_quantity]"
+                                           type="number" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_unit')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_unit" data-rule="required" class="form-control" name="row[mp_unit]"
+                                           type="number" value="0">
+                                </div>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Mp_total')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-mp_total" data-rule="required" class="form-control" step="0.01"
+                                           name="row[mp_total]" type="number" value="0">
+                                </div>
+                            </div>
+
+                            <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <label class="control-label col-xs-4">{:__('Order')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input id="c-order" class="form-control" name="row[order]" type="number" value="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-xs-12 col-sm-2">{:__('Mp_remark')}:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <textarea id="c-mp_remark" class="form-control " rows="5" name="row[mp_remark]"
+                                              cols="50"></textarea>
+                                </div>
+                            </div>
+                            <input type="hidden" name="ma_id" value="{$mid}">
+                            <div class="form-group layer-footer">
+                                <label class="control-label col-xs-4"></label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}
+                                    </button>
+                                    <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

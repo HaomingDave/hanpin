@@ -1,0 +1,168 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">所属项目:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pid" data-rule="required" data-source="project/getProjectList"
+                   class="form-control selectpage" name="row[pid]" type="text"
+                   value="{$row.pid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sgtxgt')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-sgtxgt" data-rule="required" class="form-control selectpicker" name="row[sgtxgt]">
+                {foreach name="sgtxgtList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.sgtxgt"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark1" class="form-control " rows="5" name="row[check_remark1]" cols="50">{$row.check_remark1|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sgjdb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-sgjdb" data-rule="required" class="form-control selectpicker" name="row[sgjdb]">
+                {foreach name="sgjdbList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.sgjdb"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark2" class="form-control " rows="5" name="row[check_remark2]" cols="50">{$row.check_remark2|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sgzcwd')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-sgzcwd" data-rule="required" class="form-control selectpicker" name="row[sgzcwd]">
+                {foreach name="sgzcwdList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.sgzcwd"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark3')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark3" class="form-control " rows="5" name="row[check_remark3]" cols="50">{$row.check_remark3|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Gywd')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-gywd" data-rule="required" class="form-control selectpicker" name="row[gywd]">
+                {foreach name="gywdList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.gywd"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark4')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark4" class="form-control " rows="5" name="row[check_remark4]" cols="50">{$row.check_remark4|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sxgcl')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-sxgcl" data-rule="required" class="form-control selectpicker" name="row[sxgcl]">
+                {foreach name="sxgclList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.sxgcl"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark5')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark5" class="form-control " rows="5" name="row[check_remark5]" cols="50">{$row.check_remark5|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Clxyzb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-clxyzb" data-rule="required" class="form-control selectpicker" name="row[clxyzb]">
+                {foreach name="clxyzbList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.clxyzb"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark6')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark6" class="form-control " rows="5" name="row[check_remark6]" cols="50">{$row.check_remark6|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ysfwhgcl')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-ysfwhgcl" data-rule="required" class="form-control selectpicker" name="row[ysfwhgcl]">
+                {foreach name="ysfwhgclList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.ysfwhgcl"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark7')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark7" class="form-control " rows="5" name="row[check_remark7]" cols="50">{$row.check_remark7|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Wmsdqz')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-wmsdqz" data-rule="required" class="form-control selectpicker" name="row[wmsdqz]">
+                {foreach name="wmsdqzList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.wmsdqz"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Check_remark8')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-check_remark8" class="form-control " rows="5" name="row[check_remark8]" cols="50">{$row.check_remark8|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Order')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order" class="form-control" name="row[order]" type="number" value="{$row.order|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
